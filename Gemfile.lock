@@ -1,0 +1,9 @@
+GEM
+  specs:
+    thor (0.15.2)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  thor (= 0.15.2)
