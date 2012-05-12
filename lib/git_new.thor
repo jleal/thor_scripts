@@ -38,7 +38,7 @@ module Git
           inside name do
             run "git init"
             run "touch README"
-            run "git add README"
+            run "git add ."
             run "git commit -m 'first commit'"
           end
       end
