@@ -1,1 +1,3 @@
-gem "thor" , "0.15.2"
+source :rubygems
+
+gem "thor"
