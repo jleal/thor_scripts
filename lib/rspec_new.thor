@@ -18,12 +18,13 @@ module Rspec
 
     def verify_rails
       unless File.exist?("Gemfile")
-        puts "Command must be run at the top level of the rails app"
+        say_status(:error , "Command must be run at the top level of the rails app" , :red)
         exit
       end
     end
 
     def append_gem_file
+      say_status(:appending , "adding rspec-rails to Gemfile" )
       append_file("Gemfile" , "\ngem 'rspec-rails', :group => [:development, :test]")
     end
 
