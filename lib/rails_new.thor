@@ -16,7 +16,7 @@ module Rails
 
     def create_rails
       unless options[:test_unit]
-        run("rails new #{name} --skip-test-unit")
+        run("rails new #{name} --skip-test-unit --skip-bundle")
         inside name do
           thor(:"rspec:new")
         end
